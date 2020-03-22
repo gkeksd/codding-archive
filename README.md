@@ -1,2 +1,2 @@
 # programing-source-project
-내 개인 저장소
+파이썬 등등 개인 저장소
