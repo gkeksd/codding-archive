@@ -2,11 +2,11 @@
 int comparison(const char* one, const char* two) {
     for (; (*one != '\0') || (*two != '\0'); one++, two++) {
         if (*one != *two) {
-            printf("µÎ ¹®ÀÚ¿­ÀÌ ´Ù¸¨´Ï´Ù.");
+            printf("ë‘ ë¬¸ìì—´ì´ ë‹¤ë¦…ë‹ˆë‹¤.");
             return -1;
         }
     }
-    printf("µÎ ¹®ÀÚ¿­ÀÌ °°½À´Ï´Ù.");
+    printf("ë‘ ë¬¸ìì—´ì´ ê°™ìŠµë‹ˆë‹¤.");
     return 0;
 }
 
@@ -23,9 +23,9 @@ int main(void) {
     char str1[100];
     char str2[100];
 
-    printf("Ã¹ ¹øÂ° ¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä");
+    printf("ì²« ë²ˆì§¸ ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”");
     gets_s(str1, sizeof(str1));
-    printf("µÎ ¹øÂ° ¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä");
+    printf("ë‘ ë²ˆì§¸ ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”");
     gets_s(str2, sizeof(str2));
 
     comparison(str1, str2);
