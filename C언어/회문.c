@@ -25,10 +25,10 @@ int main(int argc, char* argv[]) {
     int i;
     int chk;
 
-    printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ã¿À? ");
+    printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹œì˜¤? ");
     scanf("%s", inputStr);
 
-    chk = Palindrome(inputStr); //È¸¹® Ã¼Å© 
+    chk = Palindrome(inputStr); //íšŒë¬¸ ì²´í¬ 
 
     if (chk == 1) printf("true\n");
     else printf("false\n");
