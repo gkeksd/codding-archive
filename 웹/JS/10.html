@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .js{
+                font-weight: bold;
+                color: red;
+            }
+            #first{
+                color: green;
+            }
+            span{
+                color: blue;
+            }
+        </style>
+        <title>WEB2 - JS</title>
+        <meta charset="utf-8">
+        <script>
+            function nightDayHandler(self) {
+                var target = document.querySelector('body'); /*body태그를 불러내는 코드가 중복되므로 target 변수로 대체*/
+                if(self.value === 'night'){ /*태그의 id값을 querySelector로 불러내는 것은 곧 재귀함수나 마찬가지므로 self로 처리함. id도 필요 없어지므로 지움*/
+                    target.style.backgroundColor = 'black';
+                    target.style.color='white'; 
+                    self.value = 'day';
+
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color = 'powderblue';
+                        i += 1;
+                    }
+                } else {
+                    target.style.backgroundColor = 'white';
+                    target.style.color='black';
+                    self.value = 'night';
+
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color = 'black';
+                        i += 1;
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>WEB</h1>
+        <input type="button" value="night" onclick="
+        nightDayHandler(this);
+        ">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JAVASCRIPT</a></li>
+        </ol>
+        <h1>WEB</h1>
+        <p>
+            <span id="first" class="js">웹</span>(Web, WWW, W3)은 <span>인터넷</span>에 연결된 컴퓨터를 통해 
+            사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다. 간단히 
+            <span class="js">웹</span>(the Web)이라 부르는 경우가 많다. 이 용어는 <span>인터넷</span>과 동의어로 쓰이는 
+            경우가 많으나 엄격히 말해 서로 다른 개념이다. <span class="js">웹</span>은 전자 메일과 같이 <span>인터넷</span> 
+            상에서 동작하는 하나의 서비스일 뿐이다. 그러나 1993년 이래로 <span class="js">웹</span>은 <span>인터넷</span> 
+            구조의 절대적 위치를 차지하고 있다. <span>인터넷</span>에서 HTTP 프로토콜, 하이퍼텍스트, 
+            HTML형식 등을 사용하여 그림과 문자를 교환하는 전송방식을 말하기도 한다.
+    </body>
+</html>
