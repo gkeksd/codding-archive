@@ -8,7 +8,7 @@ int main() {
 	char str4 = str1 + 3; // D
 
 	println("{}{}{}{}", str1, str3, str2, str4); //ABCD
-	print("{}\n{}\n{}\n{}\n", str1, str3, str2, str4); //ABCD °¢ ¹®ÀÚº° ÁÙ¹Ù²Ş Ãâ·Â
+	print("{}\n{}\n{}\n{}\n", str1, str3, str2, str4); //ABCD Â°Â¢ Â¹Â®Ã€ÃšÂºÂ° ÃÃ™Â¹Ã™Â²Ã ÃƒÃ¢Â·Ã‚
 
 	print("{}", sizeof(int));
 }
