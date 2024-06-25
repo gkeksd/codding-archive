@@ -4,9 +4,9 @@ using namespace std;
 
 int main() {
 	int num = 17;
-	const double pi = 3.141592; // »ó¼ö. °ª º¯°æ ºÒ°¡
+	const double pi = 3.141592; // ìƒìˆ˜. ê°’ ë³€ê²½ ë¶ˆê°€
 
-	println("{}", num); // 17. print(num);Àº µ¿ÀÛÇÏÁö ¾ÊÀ½
+	println("{}", num); // 17. print(num);ì€ ë™ì‘í•˜ì§€ ì•ŠìŒ
 	cout << num << endl; // 17
 
 	num += 20;
@@ -14,12 +14,12 @@ int main() {
 	println("{}", num); // 37
 
 	println("{}", pi); // 3.141592
-	/* pi = 2;  µ¿ÀÛÇÏÁö ¾ÊÀ½ */
+	/* pi = 2;  ë™ì‘í•˜ì§€ ì•ŠìŒ */
 
 	int num2 = 12;
 	int num3;
 
-	print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À: ");
+	print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤: ");
 	cin >> num3;
 
 	print("{}", num2 + num3);
