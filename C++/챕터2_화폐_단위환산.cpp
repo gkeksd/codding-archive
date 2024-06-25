@@ -8,16 +8,16 @@ int main() {
 
 	int penny, dime, dollar;
 
-	std::print("Æä´ÏÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	std::print("í˜ë‹ˆì˜ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	std::cin >> penny;
 
-	std::print("´ÙÀÓÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	std::print("ë‹¤ì„ì˜ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	std::cin >> dime;
 
-	std::print("´Ş·¯ÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	std::print("ë‹¬ëŸ¬ì˜ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	std::cin >> dollar;
 
 	int sum = penny * pennyValue + dime * dimeValue + dollar * dollarValue;
 
-	std::print("ÃÑ Æä´ÏÀÇ ¼ö: {}Æä´Ï", sum);
+	std::print("ì´ í˜ë‹ˆì˜ ìˆ˜: {}í˜ë‹ˆ", sum);
 }
